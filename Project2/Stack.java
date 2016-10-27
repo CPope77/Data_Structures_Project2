@@ -28,15 +28,15 @@ public class Stack{
 	public char pop() {
 		return charArray[arraySize--];
 	}
-		
-	public char peek(){
-		return charArray[arraySize];
-	}
 	
 	public boolean isEmpty(){
 		if(arraySize == 0){
 			return true;
 		}
 		else{ return false; }
+	}
+	
+	public char peek(){
+		return charArray[arraySize];
 	}
 }

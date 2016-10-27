@@ -8,11 +8,7 @@ import java.io.*;
 
 public class InfixToPostfix{
 		
-	private static Stack stack;
-	
-	public InfixToPostfix(){
-		stack = new Stack();
-	}
+	private static Stack stack = new Stack();
 	
 	public static void main(String[] args)throws IOException{
 		String infix;

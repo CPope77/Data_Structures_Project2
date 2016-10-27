@@ -1,3 +1,8 @@
+//*******************************************//
+//		Created by Connor Pope & Zebulon Cunningham  //
+//																				   //
+//*******************************************//
+
 import java.util.*;
 import java.io.*;
 
@@ -28,8 +33,9 @@ public class InfixToPostfix{
 				stack.pop();
 			}
 			else{
-				while(!stack.isEmpty() && !(stack.peek() == '(') && (evaluatePostfix(symbol) <= evaluatePostfix(stack.peek()))){
-					postfix += stack.pop();
+				while(!stack.isEmpty() && !(stack.peek() == '(') && 
+							(evaluatePostfix(symbol) == evaluatePostfix(stack.peek()))){
+					stack.pop();
 				}
 				stack.push(symbol);
 			}

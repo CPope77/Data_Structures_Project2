@@ -1,3 +1,8 @@
+//*******************************************//
+//		Created by Connor Pope & Zebulon Cunningham  //
+//																				   //
+//*******************************************//
+
 import java.util.*;
 import java.io.*;
 
